@@ -13,6 +13,7 @@ const Gallery = dynamic(() => import("@/components/Gallery"), { ssr: false });
 const Background = dynamic(() => import("@/components/Background"), { ssr: false });
 const LoveLetterGift = dynamic(() => import("@/components/LoveLetterGift"), { ssr: false });
 const ReasonsWhyILoveYou = dynamic(() => import("@/components/ReasonsWhyILoveYou"), { ssr: false });
+const HeartCollage = dynamic(() => import("@/components/HeartCollage"), { ssr: false });
 const MakeAWishCake = dynamic(() => import("@/components/MakeAWishCake"), { ssr: false });
 
 export default function Home() {
@@ -48,9 +49,10 @@ export default function Home() {
             <Heart className="w-4 h-4 text-rose-500 fill-rose-500" />
             <span className="text-white font-medium tracking-tight text-sm">FOR NAMI</span>
           </div>
-          <div className="hidden sm:flex items-center gap-6 text-xs font-medium text-neutral-400">
+          <div className="hidden sm:flex items-center gap-5 text-xs font-medium text-neutral-400">
             <a href="#special-gift" className="hover:text-rose-300 transition-colors">Gift 💌</a>
             <a href="#reasons" className="hover:text-rose-300 transition-colors">Reasons ❤️</a>
+            <a href="#heart-collage" className="hover:text-rose-300 transition-colors">Heart 💖</a>
             <a href="#make-a-wish" className="hover:text-rose-300 transition-colors">Make a Wish 🎂</a>
             <a href="#gallery" className="hover:text-rose-300 transition-colors">Memories 📸</a>
           </div>
@@ -122,6 +124,8 @@ export default function Home() {
         <LoveLetterGift />
 
         <ReasonsWhyILoveYou />
+
+        <HeartCollage />
 
         <MakeAWishCake />
 
